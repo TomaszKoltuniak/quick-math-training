@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css' ) }}">
+    <meta name="author" content="Tomasz Kołtuniak">
+    <title>Quick Math training</title>
+</head>
+<body>
+    <form action="/" method="post" name="myForm" id="myForm">
+        <h1>Score: {{ score }}</h1>
+        <div>{{ number_a }} {{ operator }} {{ number_b }}</div>
+        <input type="number" name="answer" id="answer" autocomplete="off" autofocus>
+        <input type="submit" value="Submit" id="sub" class="hide">
+        <input type="hidden" name="correct" value="{{ correct }}">
+        <div id="crt">{{ correct }}</div>
+    </form>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

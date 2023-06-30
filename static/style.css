@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(31, 31, 31);
+    color: rgb(204, 204, 204);
+    font-family: "Dosis";
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.hide {
+    display: none;
+}
+#answer {
+    outline: none;
+}
+#answer {
+    font-family: "Dosis";
+    font-size: 50px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(204, 204, 204);
+    width: 100px;
+    height: 100px;
+    caret-color: transparent;
+    border: none;
+    text-align: right;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
